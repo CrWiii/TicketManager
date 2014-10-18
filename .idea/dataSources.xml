@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1786409221">
+    <data-source source="LOCAL" name="SQL Server - TM@(local)" uuid="d917cb4f-a014-4bde-b36f-a11627452ad6">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://(local):1433;databaseName=TM</jdbc-url>
+      <user-name>sa</user-name>
+      <user-password>df9edf9fdf9cdf98df9edf93df92df9c</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

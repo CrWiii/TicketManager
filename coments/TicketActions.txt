@@ -1,0 +1,14 @@
+
+        <!-- VALIDAR EL TIPO DE USUARIO
+        SI EL TYPE DE USUARIO ES ADMIN MOSTRAR
+        {Recategorizar}|
+
+        {Rasignar}
+        validar si esta ASIGNADO a alguien [TM_History]
+        FALSE = NOTIFICAR QUE NO SE PUEDE RECATEGORIZAR PORQUE
+        --------------
+        {Diagnosticar}|[generar un Auto-Asignar]y mostrar un mensaje 'desea autoasignarse el ticket'
+        FALSE = mostrar GridList
+        TRUE  = Auto-Asignar el ticket y mostrar FormDiagnostic
+        ----
+        -->

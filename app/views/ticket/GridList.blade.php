@@ -32,7 +32,7 @@
                                             </div>
                                             <label class="col-lg-1 col-md-1 control-label">Clase:</label>
                                             <div class="col-lg-2 col-md-2">
-
+                                                {{Form::select('Class_Id', $TM_Class, null, array('class' => 'form-control input-sm', 'id' => 'Class'))}}
                                             </div>
 
                                             <label class="col-lg-1 col-md-1 control-label">Situación:</label>

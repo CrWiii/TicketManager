@@ -17,6 +17,7 @@ use TicketManager\Repositories\ProfileRepo;
 use TicketManager\Repositories\HistoryRepo;
 use TicketManager\Repositories\DiagnosticRepo;
 use TicketManager\Repositories\SolutionRepo;
+use TicketManager\Repositories\StateRepo;
 
 class TicketController extends BaseController {
 
@@ -33,6 +34,7 @@ class TicketController extends BaseController {
     protected $historyRepo;
     protected $diagnosticRepo;
     protected $solutionRepo;
+    protected $stateRepo;
 
     public function __construct (ticketRepo $ticketRepo,
                                  chargeRepo $chargeRepo,
@@ -46,7 +48,8 @@ class TicketController extends BaseController {
                                  profileRepo $profileRepo,
                                  historyRepo $historyRepo,
                                  diagnosticRepo $diagnosticRepo,
-                                 solutionRepo $solutionRepo)
+                                 solutionRepo $solutionRepo,
+                                 stateRepo $stateRepo)
     {
         $this->ticketRepo     = $ticketRepo;
         $this->chargeRepo     = $chargeRepo;
@@ -60,15 +63,17 @@ class TicketController extends BaseController {
         $this->profileRepo    = $profileRepo;
         $this->historyRepo    = $historyRepo;
         $this->diagnosticRepo = $diagnosticRepo;
-        $this->solutionRepo  = $solutionRepo;
+        $this->solutionRepo   = $solutionRepo;
+        $this->stateRepo      = $stateRepo;
     }
     public function ListTicket()
     {
 //        $Tickets = Ticket::paginate(10);
         $Tickets = Ticket::orderBy('DateTicket', 'desc')->paginate(10);
-        //$TM_Class = $this->classRepo->getList();
+        $TM_Class = $this->classRepo->getList();
+        $TM_State = $this->stateRepo->getList();
         //$TM_Ticket = $this->ticketRepo->getList();
-        return View::make('ticket/GridList', compact('Tickets'));
+        return View::make('ticket/GridList', compact('Tickets','TM_Class','TM_State'));
     }
     public function RegistrationTicket()
     {

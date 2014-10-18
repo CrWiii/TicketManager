@@ -23,19 +23,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TicketController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TicketController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/TicketController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="9" selection-start="2146" selection-end="2146" vertical-scroll-proportion="-6.5384617" vertical-offset="459" max-vertical-offset="3808">
+            <state line="75" column="86" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.6926121" vertical-offset="750" max-vertical-offset="4182">
+              <folding>
+                <element signature="e#6#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ticket.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/TicketManager/Entities/Ticket.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="2074">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GridList.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StateRepo.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/StateRepo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="39" selection-start="336" selection-end="336" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GridList.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/ticket/GridList.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="153" selection-start="1987" selection-end="1987" vertical-scroll-proportion="0.3055199" vertical-offset="340" max-vertical-offset="2176">
+            <state line="30" column="148" selection-start="1639" selection-end="1639" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="2176">
               <folding />
             </state>
           </provider>
@@ -69,7 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/database/migrations/_2014_06_09_052221_create_TM_Solution_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/_2014_06_09_052237_create_TM_Tracking_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_06_24_032346_create_TM_Tracking_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_06_24_032222_create_TM_Solution_table.php" />
@@ -108,7 +127,6 @@
         <option value="$PROJECT_DIR$/app/views/manager/user/GridList.blade.php" />
         <option value="$PROJECT_DIR$/app/views/manager/Category/GridList.blade.php" />
         <option value="$PROJECT_DIR$/bootstrap/start.php" />
-        <option value="$PROJECT_DIR$/app/TicketManager/Repositories/ClassRepo.php" />
         <option value="$PROJECT_DIR$/app/controllers/d" />
         <option value="$PROJECT_DIR$/app/TicketManager/Repositories/TicketRepo.php" />
         <option value="$PROJECT_DIR$/app/views/includes/javascripts.blade.php" />
@@ -117,9 +135,11 @@
         <option value="$PROJECT_DIR$/public/assets/js/autocomplete.js" />
         <option value="$PROJECT_DIR$/app/views/ticket/FormRegistration.blade.php" />
         <option value="$PROJECT_DIR$/app/TicketManager/Repositories/LocalRepo.php" />
-        <option value="$PROJECT_DIR$/app/controllers/TicketController.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
+        <option value="$PROJECT_DIR$/app/TicketManager/Repositories/ClassRepo.php" />
+        <option value="$PROJECT_DIR$/app/TicketManager/Repositories/StateRepo.php" />
         <option value="$PROJECT_DIR$/app/views/ticket/GridList.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/TicketController.php" />
       </list>
     </option>
   </component>
@@ -355,6 +375,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TicketManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TicketManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TicketManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TicketManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -638,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/TicketManager/Entities/Ticket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="17" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="2074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2309" column="22" selection-start="45264" selection-end="45264" vertical-scroll-proportion="0.22584693" vertical-offset="39073" max-vertical-offset="59840">
@@ -694,13 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/BaseRepo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="797">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="17" selection-start="3243" selection-end="3243" vertical-scroll-proportion="0.52506596" vertical-offset="452" max-vertical-offset="1258">
@@ -711,20 +739,6 @@
     <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/ChannelRepo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="2" selection-start="312" selection-end="312" vertical-scroll-proportion="0.37483788" vertical-offset="0" max-vertical-offset="771">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/ChargeRepo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="797">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/ClassRepo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="354" selection-end="354" vertical-scroll-proportion="0.3527886" vertical-offset="0" max-vertical-offset="771">
           <folding />
         </state>
       </provider>
@@ -771,23 +785,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/TicketRepo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="221" selection-end="221" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="969">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/LocalRepo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="51" selection-start="493" selection-end="503" vertical-scroll-proportion="0.44098574" vertical-offset="0" max-vertical-offset="771">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/TicketController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="9" selection-start="2146" selection-end="2146" vertical-scroll-proportion="-6.5384617" vertical-offset="459" max-vertical-offset="3808">
           <folding />
         </state>
       </provider>
@@ -799,6 +799,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/TicketRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="221" selection-end="221" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ticket/FormRegistration.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="6" selection-start="1023" selection-end="1023" vertical-scroll-proportion="42.5" vertical-offset="1785" max-vertical-offset="3349">
@@ -806,10 +813,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/TicketManager/Entities/State.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/ChargeRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="797">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/BaseRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="797">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/ClassRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="30" selection-start="145" selection-end="145" vertical-scroll-proportion="0.154345" vertical-offset="0" max-vertical-offset="771">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/TicketManager/Repositories/StateRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="39" selection-start="336" selection-end="336" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ticket/GridList.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="153" selection-start="1987" selection-end="1987" vertical-scroll-proportion="0.3055199" vertical-offset="340" max-vertical-offset="2176">
+        <state line="30" column="148" selection-start="1639" selection-end="1639" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="2176">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/TicketManager/Entities/Ticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="2074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/TicketController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="86" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.6926121" vertical-offset="750" max-vertical-offset="4182">
+          <folding>
+            <element signature="e#6#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

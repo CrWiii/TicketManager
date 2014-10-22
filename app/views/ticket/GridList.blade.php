@@ -95,15 +95,13 @@
                                     <td><a href="{{ route('show_ticket', [$Ticket->id]) }}">{{ $Ticket->id }}</a></td>
                                     <!--<td>{{ $Ticket->created_at }}</td>-->
                                     <td>{{ $Ticket->DateTicket }}</td>
-                                    <td>{{ $Ticket->applicants->Description }}</td>
-                                    <td>{{ $Ticket->Responsible->username }}</td>
-                                    <td>{{ $Ticket->States->Description }}</td>
-                                    <td>{{ $Ticket->Categories->Description }}</td>
-                                    <td>{{ $Ticket->SubCategories->Description }}</td>
-                                    <!--<td>{{ $Ticket->Specifies->Description }}</td>-->
-                                    <!--<td>{{ $Ticket->Priorities->Description }}</td>-->
-                                    <td>{{ $Ticket->Channels->Description }}</td>
-                                    <td></td>
+                                    <td>{{ $Ticket->Local_Id }}</td>
+                                    <td>{{ $Ticket->Person_Id }}</td>
+                                    <td>{{ $Ticket->State_Id }}</td>
+                                    <td>{{ $Ticket->Category_Id }}</td>
+                                    <td>{{ $Ticket->SubCategory_Id }}</td>
+                                    <td>{{ $Ticket->Channel_Id }}</td>
+                                    <td>{{ $Ticket->created_at }}</td>
                                 </tr>
                                 @endforeach
                                 </tbody>

@@ -30,17 +30,11 @@ class StateTableSeeder extends Seeder {
             'LastUser' => 'ROOT'
         ]);
         State::create([
-            'Description' => 'CONFIRMADO',
-            'Status' => true,
-            'RegisterBy' => 'ROOT',
-            'LastUser' => 'ROOT'
-        ]);
-
-        State::create([
             'Description' => 'RECHAZADO',
             'Status' => true,
             'RegisterBy' => 'ROOT',
             'LastUser' => 'ROOT'
         ]);
+
     }
 } 

@@ -1,5 +1,6 @@
 <?php
 use TicketManager\Entities\Ticket;
+use TicketManager\Entities\Local;
 use TicketManager\Managers\TicketManager;
 use TicketManager\Managers\HistoryManager;
 use TicketManager\Managers\DiagnosticManager;
@@ -70,6 +71,7 @@ class TicketController extends BaseController {
     {
 //        $Tickets = Ticket::paginate(10);
         $Tickets = Ticket::orderBy('DateTicket', 'desc')->paginate(10);
+        //$Tickets = Local::with('Tickets')->get();
         $TM_Class = $this->classRepo->getList();
         $TM_State = $this->stateRepo->getList();
         //$TM_Ticket = $this->ticketRepo->getList();
@@ -106,6 +108,7 @@ class TicketController extends BaseController {
     {
         $Ticket = $this->ticketRepo->find($id);
         $Responsible = $this->ticketRepo->findResponsible($id);
+
         return View::make('ticket/FormAssignment', compact('Ticket', 'Responsible'));
     }
     public function AssignTicket()
@@ -113,7 +116,8 @@ class TicketController extends BaseController {
         $History = $this->historyRepo->newHistory();
         $manager = new HistoryManager($History, Input::all());
         $manager->save();
-        Ticket::where('id', Input::get('Ticket_Id'))->update(array('State_Id' => 2,'User_Id' => Input::get('User_Id')));
+        Ticket::where('id', Input::get('Ticket_Id'))
+            ->update(array('State_Id' => 2,'User_Id' => Input::get('User_Id')));
 
         return Redirect::route('list_ticket');
     }
@@ -130,15 +134,17 @@ class TicketController extends BaseController {
     {
         $Ticket = $this->ticketRepo->find($id);
         $TM_Class = $this->classRepo->getList();
+
         return View::make('ticket/FormDiagnostic', compact('Ticket', 'TM_Class'));
     }
     public function DiagnoseTicket()
     {
-
         $Diagnostic = $this->diagnosticRepo->newDiagnostic();
         $manager = new DiagnosticManager($Diagnostic, Input::all());
         $manager->save();
-        Ticket::where('id', Input::get('Ticket_Id'))->update(array('State_Id' => 3,'User_Id' => Input::get('User_Id')));
+        Ticket::where('id', Input::get('Ticket_Id'))
+            ->update(array('State_Id' => 3,'User_Id' => Input::get('User_Id')));
+
         return Redirect::route('list_ticket');
     }
     public function SolutionTicket($id)
@@ -151,7 +157,8 @@ class TicketController extends BaseController {
         $Solution = $this->solutionRepo->newSolution();
         $manager = new SolutionManager($Solution, Input::all());
         $manager->save();
-        Ticket::where('id', Input::get('Ticket_Id'))->update(array('State_Id' => 4,'User_Id' => Input::get('User_Id')));
+        Ticket::where('id', Input::get('Ticket_Id'))
+            ->update(array('State_Id' => 4,'User_Id' => Input::get('User_Id')));
         return Redirect::route('list_ticket');
     }
     public function ReassignmentTicket()
